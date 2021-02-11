@@ -1,0 +1,47 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome-pry (0.0.4)
+      awesome_print
+      pry
+      pry-byebug
+      pry-coolline
+      pry-doc
+      pry-rails
+      pry-stack_explorer
+    awesome_print (1.8.0)
+    binding_of_caller (1.0.0)
+      debug_inspector (>= 0.0.1)
+    byebug (11.1.3)
+    coderay (1.1.3)
+    coolline (0.5.0)
+      unicode_utils (~> 1.4)
+    debug_inspector (1.0.0)
+    method_source (1.0.0)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    pry-coolline (0.2.5)
+      coolline (~> 0.5)
+    pry-doc (1.1.0)
+      pry (~> 0.11)
+      yard (~> 0.9.11)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
+    pry-stack_explorer (0.6.1)
+      binding_of_caller (~> 1.0)
+      pry (~> 0.13)
+    unicode_utils (1.4.0)
+    yard (0.9.26)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  awesome-pry
+
+BUNDLED WITH
+   2.2.7
