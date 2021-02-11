@@ -34,6 +34,10 @@ GEM
     pry-stack_explorer (0.6.1)
       binding_of_caller (~> 1.0)
       pry (~> 0.13)
+    sorbet (0.5.6262)
+      sorbet-static (= 0.5.6262)
+    sorbet-runtime (0.5.6262)
+    sorbet-static (0.5.6262-x86_64-linux)
     unicode_utils (1.4.0)
     yard (0.9.26)
 
@@ -42,6 +46,8 @@ PLATFORMS
 
 DEPENDENCIES
   awesome-pry
+  sorbet
+  sorbet-runtime
 
 BUNDLED WITH
    2.2.7
