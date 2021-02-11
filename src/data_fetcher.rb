@@ -1,6 +1,6 @@
 require 'net/http'
 require 'json'
-require './data_mapper.rb'
+require_relative 'data_mapper'
 
 class DataFetcher
   def fetch_data
