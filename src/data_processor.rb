@@ -3,7 +3,7 @@ require_relative 'sale'
 class DataProcessor
   def process(data)
     grouped_sales = data.group_by { |x| x.data_venda && x.vendedor_cpf }
-    sales = grouped_sales.map do |_key, value|
+    grouped_sales.map do |_key, value|
       sale = Sale.new
       sale.data_venda = value.first.data_venda
       sale.valor_vendas = value.sum(&:valor_vendas)
@@ -14,6 +14,6 @@ class DataProcessor
       sale.vendedor_id = value.first.vendedor_id
       sale
     end
-    sales
+    # sales
   end
 end

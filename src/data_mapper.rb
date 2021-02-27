@@ -3,8 +3,7 @@ require 'date'
 
 class DataMapper
   def self.map(sales)
-
-    list = sales.map do |value|
+    sales.map do |value|
       sale = Sale.new
       sale.data_venda = DateTime.parse(value['data_venda'])
       sale.valor_vendas = value['valor_vendas'].to_f
@@ -15,7 +14,5 @@ class DataMapper
       sale.vendedor_id = value['vendedor_id']
       sale
     end
-
-    list
   end
 end
